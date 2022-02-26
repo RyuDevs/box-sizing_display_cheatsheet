@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('../fonts/IndieFlower-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/static/Raleway-Black.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-BlackItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-Bold.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-BoldItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-ExtraBold.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-ExtraLight.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-ExtraLightItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-Italic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-Light.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-LightItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-Medium.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-MediumItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-Regular.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-SemiBold.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-SemiBoldItalic.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-Thin.ttf') format("truetype"),
+         url('../fonts/Raleway/static/Raleway-ThinItalic.ttf') format("truetype");
+}
+
+body{
+    font-family: 'Indie Flower', 'Trebuchet MS', serif;
+    text-align: center;
+    background-color: oldlace;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+h2{
+    padding: 12px;
+    font-size: 30px;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+table{
+    margin: 0 0;
+    font-size: 20px;
+    border: 2px solid midnightblue;
+    background-color: lightcyan;
+}
+
+thead{
+    background-color: cadetblue;
+}
+
+th {
+    text-decoration: underline;
+}
+
+td{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid white;
+}
+
+.syntax{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    font-size: smaller;
+    font-style: italic;
+}

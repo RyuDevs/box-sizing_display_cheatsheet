@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./resources/css/styles.css" type="text/css" rel="stylesheet"> 
+    <title>box-sizing and display Cheatsheet</title>
+</head>
+<body>
+    <h1>box-sizing and display Cheatsheet</h1>
+    <section>
+        <h2>box-sizing CSS property</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                    <th>Syntax</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">box-sizing:</td>
+                    <td>content-box</td>
+                    <td>It's the default CSS box-sizing behavior. For Example if the width is set to 200px and the height 200px then the padding and border-size is added on top of the 200px.
+                        so if you add 20px padding then the box is 240px wide and the height is 240px.
+                    </td>
+                    <td class="syntax">.example {box-sizing: content-box;}</td>
+                </tr>
+                <tr>
+                    <td>border-box:</td>
+                    <td>This CSS box-sizing tells the browser that any border and padding values are within the width and height of the element. So if the elements width is 200px and the 
+                        height is 200px. Now you add a border of 10px and padding of 50px then the height and width will remain 200px and the border and padding of the element is calculated
+                        of the element total width/height. Then the content of the element will only have left 80px height and 80px width.
+                    </td>
+                    <td class="syntax">.example {box-sizing: border-box;}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>display CSS property legacy values</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                    <th>Syntax</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="9">display:</td>
+                    <td>block</td>
+                    <td>The element generates a block element box, generating line breaks both before and after the element when in the normal flow.</td>
+                    <td class="syntax">.example {display: block;}</td>
+                </tr>
+                <tr>
+                    <td>inline</td>
+                    <td>The element generates one or more inline element boxes that do not generate line breaks before or after themselves.
+                         In normal flow, the next element will be on the same line if there is space
+                    </td>
+                    <td class="syntax">
+                        .example {display: inline;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>inline-block</td>
+                    <td>The element generates a block element box that will be flowed with surrounding content as if it were a single inline box 
+                        (behaving much like a replaced element would).
+                    </td>
+                    <td class="syntax">
+                        .example {display: inline-block;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>flex</td>
+                    <td>The element behaves like a block element and lays out its content according to the flexbox model.
+                    </td>
+                    <td class="syntax">
+                        .example {display: flex;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>inline-flex</td>
+                    <td>The element behaves like an inline element and lays out its content according to the flexbox model.
+                        It is equivalent to inline flex.
+                    </td>
+                    <td class="syntax">
+                        .example {display: inline-flex;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>grid</td>
+                    <td>The element behaves like a block element and lays out its content according to the grid model.
+                    </td>
+                    <td class="syntax">
+                        .example {display: grid;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>inline-grid</td>
+                    <td>The element behaves like an inline element and lays out its content according to the grid model.
+                        It is equivalent to inline grid.
+                    </td>
+                    <td class="syntax">
+                        .example {display: inline-grid;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>flow-root</td>
+                    <td>The element generates a block element box that establishes a new block formatting context, defining where the formatting root lies.</td>
+                    <td class="syntax">
+                        .example {display: flow-root;}
+                    </td>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist).
+                         All descendant elements also have their display turned off. To have an element take up the space that it would normally take, 
+                         but without actually rendering anything, use the visibility property instead.
+                    </td>
+                    <td class="syntax">
+                        .example {display: none;}
+                    </td>
+                </tr>
+            </tbody> 
+        </table>
+    </section>
+</body>
+</html>

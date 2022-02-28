@@ -34,7 +34,7 @@ body{
 h1 {
     padding: 20px;
     font-size: 40px;
-    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 h2{
@@ -50,6 +50,8 @@ table{
     margin: 0 0;
     font-size: 20px;
     border: 2px solid midnightblue;
+    border-radius: 10px;
+    padding: 2px;
     background-color: lightcyan;
 }
 
@@ -58,19 +60,23 @@ thead{
 }
 
 th {
-    text-decoration: underline;
+    font-style: italic;
 }
 
 td{
     padding: 10px;
     font-size: 20px;
-    font-weight: bolder;
     border: 2px solid white;
 }
 
 .syntax{
     font-family: 'Raleway';
-    font-weight: lighter;
-    font-size: smaller;
+    font-weight: 100;
+    font-size: 15px;
     font-style: italic;
+    background-color: lightgrey;
+}
+
+.syntax:hover{
+    background-color: grey;
 }
